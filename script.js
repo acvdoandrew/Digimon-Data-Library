@@ -4,7 +4,7 @@ const URL = 'https://digimon-api.vercel.app/api/digimon/name/';
 // State
 
 // Cached element references
-const $main = $('main');
+const $main = $('.main');
 const $form = $('form');
 const $input = $('input[type="text"]');
 
@@ -26,10 +26,19 @@ function handleSubmit(event) {
 
     promise.then(
         function(data){
-            console.log('Data: ', data);
+            render(data);
+            $input.val('');
         },
         function(error){
-            console.log('Error: ', error);
+            alert('Error: ', error);
         }
     )
+};
+
+function render(digiData){
+    $main.html(`
+    <h3>Name: ${digiData[0].name}</h3>
+    <p>Level: ${digiData[0].level}</p>
+    <img src="${digiData[0].img}">
+    `)
 }
