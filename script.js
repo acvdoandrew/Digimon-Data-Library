@@ -31,7 +31,7 @@ function handleSubmit(event) {
             $input.val('');
         },
         function(error){
-            alert('Error: ', error);
+            alert('Error: Could not find Digimon in the database', error);
         }
     )
 };
@@ -40,6 +40,6 @@ function render(digiData){
     $main.html(`
     <p><b>Name:</b> ${digiData[0].name}<p>
     <p><b>Level:</b> ${digiData[0].level}</p>
-    <img src="${digiData[0].img}">
+    <img src="${digiData[0].img}" class="digi-img">
     `)
 }
