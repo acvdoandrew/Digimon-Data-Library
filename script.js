@@ -6,7 +6,7 @@ const URL = 'https://digimon-api.vercel.app/api/digimon/name/';
 // Cached element references
 const $main = $('.main');
 const $form = $('form');
-const $input = $('input[type="text"]');
+const $input = $('#name');
 
 // Event listeners
 $form.on('submit', handleSubmit);
@@ -14,11 +14,12 @@ $form.on('submit', handleSubmit);
 
 
 // Functions
+handleSubmit();
 
 function handleSubmit(event) {
     event && event.preventDefault();
     
-    const name = $input.val()
+    const name = $input.val() || 'Agumon';
 
     if(!name) return;
 
@@ -37,8 +38,8 @@ function handleSubmit(event) {
 
 function render(digiData){
     $main.html(`
-    <h3>Name: ${digiData[0].name}</h3>
-    <p>Level: ${digiData[0].level}</p>
+    <p><b>Name:</b> ${digiData[0].name}<p>
+    <p><b>Level:</b> ${digiData[0].level}</p>
     <img src="${digiData[0].img}">
     `)
 }
