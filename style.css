@@ -8,12 +8,13 @@ body {
     background-color:aliceblue;
 }
 
-.head {
+.header {
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
+
 .main {
     display: flex;
     flex-direction: column;
@@ -36,4 +37,10 @@ form {
 
 .digi-img {
     mix-blend-mode: darken;
+}
+
+@media (max-width: 432px) {
+    body {
+        font-size: 50%;
+    }
 }
