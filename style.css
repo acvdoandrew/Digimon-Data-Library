@@ -22,12 +22,10 @@ body {
 
 form {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-}
-
-.name {
-    margin: 100px;
+    gap: 10px;
 }
 
 .logo {
