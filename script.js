@@ -32,6 +32,7 @@ function handleSubmit(event) {
         },
         function(error){
             alert('Error: Could not find Digimon in the database', error);
+            $input.val('');
         }
     )
 };
