@@ -50,8 +50,8 @@ footer {
     mix-blend-mode: darken;
 }
 
-@media (max-width: 442px) {
+/* @media (max-width: 442px) {
     body {
         font-size: 50%;
     }
-}
+} */
