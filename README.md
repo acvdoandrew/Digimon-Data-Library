@@ -19,7 +19,7 @@ A simple web app that takes a digimon name and displays information like level a
 
 ## Getting Started
 
-[Click here!](https://digimon-data-library-app.vercel.app/) to see the deployed app.
+[Click here!](https://digimon-data-library-app.vercel.app/) de to see the deployed app.
 
 ## Future Enhancements 
 
