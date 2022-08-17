@@ -2,9 +2,6 @@ const URL2 = 'https://digimon-api.vercel.app/api/digimon/level/'
 
 
 // Cached element references
-// const $main = $('.main');
-// const $form = $('form');
-// const $input = $('#name');
 const $inputLevel = $('#Level')
 const $formLevel = $('.level')
 
@@ -39,10 +36,4 @@ function handleSubmit(event) {
     )
 };
 
-// function render(digiData){
-//     $main.html(`
-//     <p><b>Name:</b> ${digiData[0].name}<p>
-//     <p><b>Level:</b> ${digiData[0].level}</p>
-//     <img src="${digiData[0].img}" class="digi-img">
-//     `)
-// }
+$inputLevel.prop('disabled', true);
