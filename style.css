@@ -57,6 +57,26 @@ footer {
 
 @media (max-width: 675px) {
     body {
-        font-size: 80%;
+        gap: 50%;
+    }
+    form {
+        transform: scale(0.8);
+    }
+    footer {
+        font-size: 50%;
+    }
+    .logo {
+        width: 50%;
+        height: 50%;
+    }
+    .header {
+        font-size: 50%;
+    }
+    .main {
+        font-size: 50%;
+    }
+    .digi-img {
+        width: 50%;
+        height: 50%;
     }
 }
