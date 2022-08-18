@@ -1,46 +1,46 @@
 // Constant
-const URL = 'https://digimon-api.vercel.app/api/digimon/name/';
+const URL = "https://digimon-api.vercel.app/api/digimon/name/";
 
 // State
 
 // Cached element references
-const $main = $('.main');
-const $form = $('form');
-const $input = $('#name');
+const $main = $(".main");
+const $form = $("form");
+const $input = $("#name");
 
 // Event listeners
-$form.on('submit', handleSubmit);
-
-
+$form.on("submit", handleSubmit);
 
 // Functions
 handleSubmit();
 
 function handleSubmit(event) {
-    event && event.preventDefault();
-    
-    const name = $input.val();
+  event && event.preventDefault();
 
-    if(!name) return;
+  const name = $input.val();
 
-    const promise = $.ajax(`${URL}${name}`);
+  if (!name) return;
 
-    promise.then(
-        function(data){
-            renderName(data);
-            $input.val('');
-        },
-        function(error){
-            alert('Error: Could not find Digimon in the database', error);
-            $input.val('');
-        }
-    )
-};
+  const promise = $.ajax(`${URL}${name}`);
 
-function renderName(digiData){
-    $main.html(`
+  promise.then(
+    function (data) {
+      renderName(data);
+      $input.val("");
+    },
+    function (error) {
+      alert("Error: Could not find Digimon in the database", error);
+      $input.val("");
+    }
+  );
+}
+
+function renderName(digiData) {
+  $main.html(`
     <p><b>Name:</b> ${digiData[0].name}<p>
     <p><b>Level:</b> ${digiData[0].level}</p>
-    <img src="${digiData[0].img}" class="digi-img">
-    `)
+    <div class="digi-img-wrapper">
+        <img src="${digiData[0].img}" class="digi-img">
+    </div>
+    `);
 }
