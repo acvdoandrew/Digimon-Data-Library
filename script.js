@@ -19,7 +19,7 @@ handleSubmit();
 function handleSubmit(event) {
     event && event.preventDefault();
     
-    const name = $input.val() || 'Agumon';
+    const name = $input.val();
 
     if(!name) return;
 
