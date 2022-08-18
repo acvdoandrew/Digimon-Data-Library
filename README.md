@@ -12,10 +12,12 @@ A simple web app that takes a digimon name and displays information like level a
 
 ## Screenshots 
 
-![Agumon](https://i.imgur.com/zRTm96P.png) 
+![Agumon](https://i.imgur.com/cCyKmRY.png) 
 
 
-![MetalGreymon](https://i.imgur.com/rxVY3mn.png)
+![Carousel](https://i.imgur.com/jdCE41B.png)
+
+
 
 ## Getting Started
 
