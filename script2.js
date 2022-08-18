@@ -61,7 +61,24 @@ function renderLevel(digiData) {
     nav: true,
     autoplay: true,
     autoplayTimeout: 2000,
-    autoplayHoverPause: true
+    autoplayHoverPause: true,
+    responsive: {
+      0 : {
+        items : 1,
+        dots: false,
+      },
+      480 : {
+        items: 2,
+        dots: false,
+      },
+      728 : {
+        items: 3,
+        dots: false,
+      },
+      960 : {
+        items: 4,
+      }
+    }
   });
 
   $(document).ready(function () {
