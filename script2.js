@@ -13,7 +13,13 @@ $formLevel.on('submit', handleSubmit)
 // functions
 
 $(document).ready(function(){
-    $('.owl-carousel').owlCarousel();
+    $('.owl-carousel').owlCarousel({
+        nav: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+    });
 })
 
 handleSubmit();
