@@ -12,12 +12,16 @@ $formLevel.on('submit', handleSubmit)
 
 // functions
 
+$(document).ready(function(){
+    $('.owl-carousel').owlCarousel();
+})
+
 handleSubmit();
 
 function handleSubmit(event) {
     event && event.preventDefault();
     
-    const level = $inputLevel.val() || 'Rookie';
+    const level = $inputLevel.val() || 'In training';
 
     if(!level) return;
 
@@ -27,7 +31,7 @@ function handleSubmit(event) {
         function(data){
             console.log(data);
             // render(data);
-            $input.val('');
+            $inputLevel.val('');
         },
         function(error){
             alert('Error: Could not find Digimon in the database', error);
@@ -36,4 +40,5 @@ function handleSubmit(event) {
     )
 };
 
-$inputLevel.prop('disabled', true);
+
+
