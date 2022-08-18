@@ -27,6 +27,12 @@ footer {
     font-size: 15px;
 }
 
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+
 
 .logo {
     width: 300px;
@@ -52,7 +58,7 @@ footer {
 .digi-img {
     mix-blend-mode: darken;
     width: 420px;
-    height: 430px;
+    height: 420px;
 }
 
 @media (max-width: 675px) {
