@@ -86,24 +86,13 @@ span {
 }
 
 @media (max-width: 675px) {
-    body {
-        gap: 50%;
-    }
-    footer {
-        font-size: 50%;
-    }
     h1 {
         font-size: 100%;
     }
-    .logo {
-        width: 50%;
-        height: 50%;
+    form input {
+        font-size: 2.5vw;
     }
-    .main {
-        font-size: 50%;
-    }
-    .digi-img {
-        width: 50%;
-        height: 50%;
+    .owl-carousel {
+        font-size: 100%;
     }
 }
