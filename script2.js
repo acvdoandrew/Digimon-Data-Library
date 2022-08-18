@@ -23,11 +23,10 @@ function handleSubmit(event) {
   promise.then(
     function (data) {
       renderLevel(data);
-      console.log(data);
       $inputLevel.val("");
     },
     function (error) {
-      alert("Error: Could not find Digimon in the database", error);
+      alert("Error: Could not find level in the database", error);
       $input.val("");
     }
   );
