@@ -17,7 +17,10 @@ form {
     flex-flow: column wrap;
     align-items: center;
     gap: 10px;
-    transform: scale(1.2);
+}
+
+form input {
+    font-size: 1.2vw;
 }
 
 footer {
@@ -27,11 +30,25 @@ footer {
     font-size: 15px;
 }
 
+input[type="submit"] {
+    cursor: pointer;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
 
 .logo {
-    width: 300px;
-    height: 160px;
+    width: 350px;
+    height: 150px;
     mix-blend-mode: darken;
+}
+
+span {
+    size: 50vw;
 }
 
 .header {
@@ -47,30 +64,40 @@ footer {
     flex-direction: column;
     align-items: center;
     font-size: 25px;
+    padding: 0 60px;
+}
+
+.owl-carousel {
+    mix-blend-mode: darken;
+    font-size: 1vw;
+    text-align: center;
+}
+
+.digi-img-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .digi-img {
     mix-blend-mode: darken;
-    width: 420px;
-    height: 430px;
+    height: auto;
+    object-fit: contain;
 }
 
 @media (max-width: 675px) {
     body {
         gap: 50%;
     }
-    form {
-        transform: scale(0.8);
-    }
     footer {
         font-size: 50%;
+    }
+    h1 {
+        font-size: 100%;
     }
     .logo {
         width: 50%;
         height: 50%;
-    }
-    .header {
-        font-size: 50%;
     }
     .main {
         font-size: 50%;
