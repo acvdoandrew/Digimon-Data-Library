@@ -27,7 +27,7 @@ function handleSubmit(event) {
 
     promise.then(
         function(data){
-            render(data);
+            renderName(data);
             $input.val('');
         },
         function(error){
@@ -37,7 +37,7 @@ function handleSubmit(event) {
     )
 };
 
-function render(digiData){
+function renderName(digiData){
     $main.html(`
     <p><b>Name:</b> ${digiData[0].name}<p>
     <p><b>Level:</b> ${digiData[0].level}</p>
